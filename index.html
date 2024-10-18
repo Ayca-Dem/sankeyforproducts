@@ -13,41 +13,41 @@
     data.addColumn('string', 'To');
     data.addColumn('number', 'Weight');
     data.addRows([
-       [ 'Kısmet Tavuk', 'Göğüs Bonfile', 7 ],
-       [ 'Akademi Tavuk', 'Göğüs Bonfile', 5 ],
-       [ 'Çamlıca Tavuk', 'Göğüs Bonfile', 6 ],
-       [ 'Göğüs Bonfile', 'Göğüs Bonfile (YM)', 15 ],
-       [ 'Göğüs Bonfile', 'Kırıntı Tavuk', 2 ],
-       [ 'Göğüs Bonfile', 'Zayi Tavuk', 1 ],
-       [ 'Göğüs Bonfile (YM)', 'Maslak', 7 ],
-       [ 'Göğüs Bonfile (YM)', 'FSM', 4 ],
-       [ 'Göğüs Bonfile (YM)', 'Fulya', 4 ],
-       [ 'Göğüs Bonfile (YM)', 'İçerenköy', 6 ],
-       [ 'Göğüs Bonfile (YM)', 'Ortabayır', 4 ],
-       [ 'Göğüs Bonfile (YM)', 'Hasanpaşa', 4 ],
-       [ 'Göğüs Bonfile (YM)', 'Mehmet Akif', 4 ],
-       [ 'Göğüs Bonfile (YM)', 'Seyrantepe', 5 ],
-       [ 'Maslak', 'Izgara Tavuk Salata', 2 ],
-       [ 'Maslak', 'Izgara Tavuk Bowl', 3 ],
-       [ 'Maslak', 'Pilav Üstü Izgara Tavuk', 1 ],
-       [ 'FSM', 'Izgara Tavuk Salata', 3 ],
-       [ 'FSM', 'Izgara Tavuk Bowl', 1 ],
+       [ 'Kısmet Tavuk', 'Göğüs Bonfile', 40 ],
+       [ 'Akademi Tavuk', 'Göğüs Bonfile', 30 ],
+       [ 'Çamlıca Tavuk', 'Göğüs Bonfile', 30 ],
+       [ 'Göğüs Bonfile', 'Göğüs Bonfile (YM)', 90 ],
+       [ 'Göğüs Bonfile', 'Kırıntı Tavuk', 7 ],
+       [ 'Göğüs Bonfile', 'Zayi Tavuk', 3 ],
+       [ 'Göğüs Bonfile (YM)', 'Maslak', 20 ],
+       [ 'Göğüs Bonfile (YM)', 'FSM', 15 ],
+       [ 'Göğüs Bonfile (YM)', 'Fulya', 10 ],
+       [ 'Göğüs Bonfile (YM)', 'İçerenköy', 10 ],
+       [ 'Göğüs Bonfile (YM)', 'Ortabayır', 10 ],
+       [ 'Göğüs Bonfile (YM)', 'Hasanpaşa', 10 ],
+       [ 'Göğüs Bonfile (YM)', 'Mehmet Akif', 10 ],
+       [ 'Göğüs Bonfile (YM)', 'Seyrantepe', 15 ],
+       [ 'Maslak', 'Izgara Tavuk Salata', 9 ],
+       [ 'Maslak', 'Izgara Tavuk Bowl', 6 ],
+       [ 'Maslak', 'Pilav Üstü Izgara Tavuk', 5 ],
+       [ 'FSM', 'Izgara Tavuk Salata', 5 ],
+       [ 'FSM', 'Izgara Tavuk Bowl', 7 ],
        [ 'FSM', 'Pilav Üstü Izgara Tavuk', 3 ],
        [ 'İçerenköy', 'Izgara Tavuk Salata', 3 ],
-       [ 'İçerenköy', 'Izgara Tavuk Bowl', 3 ],
-       [ 'İçerenköy', 'Pilav Üstü Izgara Tavuk', 1 ],
-       [ 'Ortabayır', 'Izgara Tavuk Salata', 1 ],
-       [ 'Ortabayır', 'Izgara Tavuk Bowl', 2 ],
-       [ 'Ortabayır', 'Pilav Üstü Izgara Tavuk', 1 ],
-       [ 'Hasanpaşa', 'Izgara Tavuk Salata', 1 ],
-       [ 'Hasanpaşa', 'Izgara Tavuk Bowl', 1 ],
+       [ 'İçerenköy', 'Izgara Tavuk Bowl', 5 ],
+       [ 'İçerenköy', 'Pilav Üstü Izgara Tavuk', 2 ],
+       [ 'Ortabayır', 'Izgara Tavuk Salata', 3 ],
+       [ 'Ortabayır', 'Izgara Tavuk Bowl', 5 ],
+       [ 'Ortabayır', 'Pilav Üstü Izgara Tavuk', 2 ],
+       [ 'Hasanpaşa', 'Izgara Tavuk Salata', 3 ],
+       [ 'Hasanpaşa', 'Izgara Tavuk Bowl', 5 ],
        [ 'Hasanpaşa', 'Pilav Üstü Izgara Tavuk', 2 ],
-       [ 'Mehmet Akif', 'Izgara Tavuk Salata', 7 ],
+       [ 'Mehmet Akif', 'Izgara Tavuk Salata', 3 ],
        [ 'Mehmet Akif', 'Izgara Tavuk Bowl', 5 ],
-       [ 'Mehmet Akif', 'Pilav Üstü Izgara Tavuk', 1 ],
-       [ 'Seyrantepe', 'Izgara Tavuk Salata', 3 ],
-       [ 'Seyrantepe', 'Izgara Tavuk Bowl', 5 ],
-       [ 'Seyrantepe', 'Pilav Üstü Izgara Tavuk', 1 ],
+       [ 'Mehmet Akif', 'Pilav Üstü Izgara Tavuk', 2 ],
+       [ 'Seyrantepe', 'Izgara Tavuk Salata', 5 ],
+       [ 'Seyrantepe', 'Izgara Tavuk Bowl', 7 ],
+       [ 'Seyrantepe', 'Pilav Üstü Izgara Tavuk', 3 ],
     ]);
 
     // Set chart options
@@ -56,7 +56,6 @@
     };
 // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
-    chart.draw(data, options);
     var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
                   '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
 
@@ -72,6 +71,8 @@
         }
       }
     };
+    chart.draw(data, options);
+    
    }
    
 </script>
